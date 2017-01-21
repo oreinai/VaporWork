@@ -1,2 +1,2 @@
-# VaporWork
-GGJ2017 - Team Visor to the Future
+# TeamVisorToTheFuture
+Repo for Team Visor To the Future: VaporWork
