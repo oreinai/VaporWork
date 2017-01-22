@@ -7,7 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\FirstFart_new</sprite>
-    <sprite>sprites\spr_bg_test</sprite>
     <sprites name="NPCs">
       <sprite>sprites\FirstFart</sprite>
     </sprites>
@@ -20,6 +19,10 @@
       <sprite>sprites\spr_test_fart</sprite>
       <sprite>sprites\spr_test_puff</sprite>
       <sprite>sprites\spr_smoke_32</sprite>
+    </sprites>
+    <sprites name="utility">
+      <sprite>sprites\spr_bg_test</sprite>
+      <sprite>sprites\spr_red</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -55,6 +58,9 @@
         <object>objects\obj_Farticles</object>
         <object>objects\cont_fx</object>
       </objects>
+    </objects>
+    <objects name="Utility">
+      <object>objects\obj_Collision</object>
     </objects>
   </objects>
   <rooms name="rooms">
