@@ -29,6 +29,7 @@
 xspeed=0
 yspeed=0
 timer=0
+my_dialog=npc_dialog_box
 </string>
           </argument>
         </arguments>
