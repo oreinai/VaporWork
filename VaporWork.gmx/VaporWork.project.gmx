@@ -9,6 +9,7 @@
     <sprite>sprites\FirstFart_new</sprite>
     <sprites name="NPCs">
       <sprite>sprites\FirstFart</sprite>
+      <sprite>sprites\spr_boss</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_walk</sprite>
@@ -30,6 +31,12 @@
       <sprite>sprites\spr_red</sprite>
     </sprites>
     <sprite>sprites\spr_fart_detected</sprite>
+    <sprites name="dialog">
+      <sprite>sprites\spr_boss_dialog</sprite>
+    </sprites>
+    <sprites name="Props">
+      <sprite>sprites\spr_desk_setup1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test</background>
@@ -54,7 +61,6 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\NPC1</object>
     <objects name="Player">
       <object>objects\obj_Player</object>
     </objects>
@@ -72,6 +78,16 @@
       <object>objects\obj_Collision</object>
     </objects>
     <object>objects\npc_dialog_box</object>
+    <objects name="NPC">
+      <object>objects\NPC1</object>
+      <objects name="Boss">
+        <object>objects\npc_boss</object>
+        <object>objects\npc_boss_dialog</object>
+      </objects>
+    </objects>
+    <objects name="Props">
+      <object>objects\obj_desk_setup1</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_room</room>
