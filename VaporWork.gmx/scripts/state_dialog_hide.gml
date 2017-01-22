@@ -1,3 +1,3 @@
 // Destroy dialog
 
-instance_destroy();
+instance_destroy()

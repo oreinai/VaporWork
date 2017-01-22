@@ -2,10 +2,9 @@
 
 if(state_new)
 {
-    timer = 0;
 }
 
-if(timer > 20)
+if(timer > 10)
 {
     state_switch("Dialog_hide");
 }

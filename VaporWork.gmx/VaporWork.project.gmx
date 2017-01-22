@@ -32,7 +32,11 @@
     </sprites>
     <sprite>sprites\spr_fart_detected</sprite>
     <sprites name="dialog">
-      <sprite>sprites\spr_boss_dialog</sprite>
+      <sprites name="Boss">
+        <sprite>sprites\spr_boss_fart_dialog</sprite>
+        <sprite>sprites\spr_boss_random_dialog</sprite>
+        <sprite>sprites\spr_boss_caught_player</sprite>
+      </sprites>
     </sprites>
     <sprites name="Props">
       <sprite>sprites\spr_desk_setup1</sprite>
@@ -58,6 +62,7 @@
       <script>scripts\state_npc_alerted.gml</script>
       <script>scripts\state_dialog_show.gml</script>
       <script>scripts\state_dialog_hide.gml</script>
+      <script>scripts\state_caught_player.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -82,7 +87,8 @@
       <object>objects\NPC1</object>
       <objects name="Boss">
         <object>objects\npc_boss</object>
-        <object>objects\npc_boss_dialog</object>
+        <object>objects\npc_boss_dialog_fart</object>
+        <object>objects\npc_boss_dialog_caught_player</object>
       </objects>
     </objects>
     <objects name="Props">

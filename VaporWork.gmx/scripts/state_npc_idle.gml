@@ -11,6 +11,7 @@ if(position_meeting(x, y, obj_cloud))
     show_debug_message("Cloud Touched Me");
     state_switch("Alerted")
 }
+
 //else
 //{
 //    state_switch("Reactive")
