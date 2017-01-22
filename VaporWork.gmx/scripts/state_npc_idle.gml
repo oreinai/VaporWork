@@ -6,16 +6,13 @@ if(state_new)
     y_speed=0;
 }
 
-if(timer < 40)
+if(position_meeting(x, y, obj_cloud))
 {
-    if(timer % 10 == 0)
-    {
-        show_debug_message("Idling")
-    }
-    timer++;
+    show_debug_message("Cloud Touched Me");
+    state_switch("Alerted")
 }
-else
-{
-    state_switch("Reactive")
-}
+//else
+//{
+//    state_switch("Reactive")
+//}
 

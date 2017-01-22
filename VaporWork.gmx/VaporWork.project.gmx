@@ -19,11 +19,13 @@
       <sprite>sprites\spr_test_fart</sprite>
       <sprite>sprites\spr_test_puff</sprite>
       <sprite>sprites\spr_smoke_32</sprite>
+      <sprite>sprites\spr_collision</sprite>
     </sprites>
     <sprites name="utility">
       <sprite>sprites\spr_bg_test</sprite>
       <sprite>sprites\spr_red</sprite>
     </sprites>
+    <sprite>sprites\spr_fart_detected</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test</background>
@@ -42,7 +44,9 @@
     </scripts>
     <scripts name="NPC_states">
       <script>scripts\state_npc_idle.gml</script>
-      <script>scripts\state_npc_reactive.gml</script>
+      <script>scripts\state_npc_alerted.gml</script>
+      <script>scripts\state_dialog_show.gml</script>
+      <script>scripts\state_dialog_hide.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -62,6 +66,7 @@
     <objects name="Utility">
       <object>objects\obj_Collision</object>
     </objects>
+    <object>objects\npc_dialog_box</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_room</room>
