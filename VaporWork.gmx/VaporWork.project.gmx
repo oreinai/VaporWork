@@ -6,17 +6,21 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\FirstFart_new</sprite>
+    <sprite>sprites\spr_bg_test</sprite>
     <sprites name="NPCs">
       <sprite>sprites\FirstFart</sprite>
     </sprites>
-    <sprite>sprites\FirstFart_new</sprite>
-    <sprite>sprites\spr_bg_test</sprite>
-    <sprite>sprites\spr_player_idle</sprite>
-    <sprite>sprites\spr_player_walk</sprite>
-    <sprite>sprites\spr_smoke_32</sprite>
-    <sprite>sprites\spr_test_cloud</sprite>
-    <sprite>sprites\spr_test_fart</sprite>
-    <sprite>sprites\spr_test_puff</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_player_walk</sprite>
+      <sprite>sprites\spr_player_idle</sprite>
+    </sprites>
+    <sprites name="Fart">
+      <sprite>sprites\spr_test_cloud</sprite>
+      <sprite>sprites\spr_test_fart</sprite>
+      <sprite>sprites\spr_test_puff</sprite>
+      <sprite>sprites\spr_smoke_32</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test</background>
@@ -40,17 +44,18 @@
   </scripts>
   <objects name="objects">
     <object>objects\NPC1</object>
-    <object>objects\cont_fx</object>
-    <object>objects\Obj_Basic_Blocker</object>
-    <object>objects\obj_cloud</object>
-    <object>objects\obj_Fart</object>
-    <object>objects\obj_Farticles</object>
-    <object>objects\obj_input</object>
-    <object>objects\obj_Player</object>
-    <object>objects\obj_Player_new</object>
-    <object>objects\obj_Player0</object>
-    <object>objects\obj_Puff</object>
-    <object>objects\obj_seg</object>
+    <objects name="Player">
+      <object>objects\obj_Player</object>
+    </objects>
+    <objects name="Fart">
+      <object>objects\obj_Fart</object>
+      <object>objects\obj_Puff</object>
+      <object>objects\obj_cloud</object>
+      <objects name="Particles">
+        <object>objects\obj_Farticles</object>
+        <object>objects\cont_fx</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_room</room>
